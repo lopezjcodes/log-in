@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: whitesmoke;
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+        }
+
+        #log {
+            background: blue;
+            margin: 50px;
+            padding: 50px;
+            width: fit-content;
+            position: absolute;
+            left: 350px;
+        }
+
+        form {
+            background: whitesmoke;
+            font-family: monospace;
+            font-weight: bolder;
+            font-size: large;
+            padding: 30px;
+            margin: 30px;
+            border-radius: 10px;
+            width: fit-content;
+        }
+
+        form input {
+            outline: none;
+            border: none;
+            background: transparent;
+            border-bottom: 3px solid black;
+            width: 50%;
+            transition: 2s;
+        }
+
+        #btn {
+            margin-top: 10px;
+            width: 100%;
+            background: rgba(207, 125, 39, 0.6);
+            color: white;
+        }
+
+        form input:hover {
+            outline: none;
+            border: none;
+            background: transparent;
+            border-bottom: 3px solid rgb(9, 219, 90);
+            width: 100%;
+        }
+
+        form a {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="log">
+        <form>
+            <label for="name" id="user">
+                username<br>
+                <input type="text" placeholder="username">
+            </label><br>
+            <label for="pass" id="user">
+                password<br>
+                <input type="password" placeholder="password">
+            </label><br>
+            <button id="btn">login</button>
+            <p>dont have an account,? <a href="#">Register</a></p>
+        </form>
+    </div>
+</body>
+
+</html>
